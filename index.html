@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de exercício</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="load()">
+  <header>
+    <h1>Hora do dia</h1>
+  </header>
+
+  <main>
+    <section>
+      <p id="msg">Agora são # horas</p>
+      <div class="img-box">
+        <img id="landscape" src="" alt="Inlustração da manhã/tarde/noite">
+      </div>
+    </section>
+    <button id="now-btn" onclick="reload()">Agora</button>
+  </main>
+  <section id="buttons">
+    <button id="morning-btn" onclick="set_morning()">Morning</button>
+    <button id="md-night-btn" onclick="set_md_night()">Middle</button>
+    <button id="night-btn" onclick="set_night()">Night</button>
+  </section>
+  <footer><p>Baseado em aulas do <em>@CursoEmVideo</em></p></footer>
+</body>
+</html>
