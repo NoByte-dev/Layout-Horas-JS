@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Tahoma, sans-serif;
 }
@@ -26,12 +26,12 @@ main {
   justify-content: center;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.7);
-  min-width: 30%;
+  min-width: 20%;
   min-height: 40%;
   padding: 15px;
   border-radius: 15px;
   box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 footer {
@@ -82,34 +82,31 @@ button:hover {
   transition: 500ms;
 }
 
-button#morning-btn:active {
-  transform: scale(98%) translate(2%, 0%);
-  background-color: rgba(0, 0, 0, 0.2);
-}
-button#md-night-btn:active {
-  transform: scale(98%);
-  background-color: rgba(0, 0, 0, 0.2);
-}
-button#night-btn:active {
-  transform: scale(98%) translate(-2%, 0%);
-  background-color: rgba(0, 0, 0, 0.2);
-}
-button#now-btn:active {
-  transform: scale(98%);
+button:active {
+  transform: scale(0.98);
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 button#morning-btn {
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 30px 0 0 30px;
 }
+
 button#md-night-btn {
-  border-radius: 0px;
-  border-width: 1px 0px 1px 0px;
+  border-radius: 0;
+  border-width: 1px 0;
 }
+
 button#night-btn {
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 0 30px 30px 0;
 }
+
 button#now-btn {
-  margin-top: -15%;
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+}
+
+div#teste {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
