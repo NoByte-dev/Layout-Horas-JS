@@ -54,7 +54,7 @@ function resetEstilosBtns() {
 }
 
 function removeEstilosBtn(elemento) {
-  elemento.style.filter = 'grayscale(100%)';
+  elemento.style.filter = '';
   elemento.style.background = 'rgba(255, 255, 255, 0.5)';
 }
 
