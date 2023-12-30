@@ -15,7 +15,7 @@ function load() {
   if (hora >= 0 && hora <= 12) {
     img.src = 'images/morning.jpeg';
     layoutName = 'morning';
-  } else if (hora > 12 && hora <= 18) {
+  } else if (hora > 12 && hora < 18) {
     img.src = 'images/md-night.jpeg';
     layoutName = 'md-night';
   } else {
